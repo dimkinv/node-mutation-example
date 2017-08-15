@@ -1,0 +1,8 @@
+.nyc_output
+node_modules
+.idea
+coverage
+reports
+*.js
+!stryker.conf.js
+!stryker-backup.conf.js

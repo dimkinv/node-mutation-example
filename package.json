@@ -1,0 +1,35 @@
+{
+  "name": "mutation-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mocha": "mocha app/**/*.spec.js",
+    "mochab": "mocha app-backup/**/*.spec.js",
+    "nyc": " nyc --reporter=html --reporter=text mocha app/**/*.spec.js",
+    "nycb": " nyc --reporter=html --reporter=text mocha app-backup/**/*.spec.js",
+    "stryker": "stryker run stryker.conf.js",
+    "strykerb": "stryker run stryker-backup.conf.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.0.2",
+    "chai": "^4.1.1",
+    "mocha-typescript": "^1.1.7",
+    "nyc": "^11.1.0",
+    "stryker": "^0.7.0",
+    "stryker-api": "^0.6.0",
+    "stryker-html-reporter": "^0.5.0",
+    "stryker-mocha-framework": "^0.2.0",
+    "stryker-mocha-runner": "^0.5.0",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "@types/mocha": "^2.2.41",
+    "mocha": "^3.5.0"
+  }
+}
